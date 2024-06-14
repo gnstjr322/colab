@@ -1,0 +1,10 @@
+{% for item in data.ids %}
+                <tr>
+                    <td><a href="{% url 'data_loader_detail_view' item %}">{{ item }}</a></td>      
+                </tr>
+            {% endfor %}
+            {% for item in data.documents %}
+                <tr>
+                    <td>{{ item }}</td>
+                </tr>
+            {% endfor %}
